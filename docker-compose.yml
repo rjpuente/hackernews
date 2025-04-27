@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  hackernews:
+    build: .
+    image: hackernews-crawler:latest
+    ports:
+      - "8080:8080"
+    environment:
+      HACKERNEWS_URL: "https://news.ycombinator.com/"
+    restart: unless-stopped

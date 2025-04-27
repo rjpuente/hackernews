@@ -25,11 +25,9 @@ A Spring Boot application that scrapes the top entries from Hacker News, filters
 
 ### Prerequisites
 
-- Java 17+
-- Gradle
+- Docker (Engine & Compose)
 - Internet access to `https://news.ycombinator.com/`
 
-### Build & Run
+### Run with Docker
+docker-compose up --build -d
 
-```bash
-./gradlew clean bootRun
